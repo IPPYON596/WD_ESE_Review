@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Sports Authorities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .flashcard {
+            background: linear-gradient(135deg, #c8e0ff, #f7f7f7);
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, height 0.5s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .flashcard:hover {
+            height: 350px;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .flashcard img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .content {
+            padding: 15px;
+            transition: opacity 0.3s;
+        }
+        .extra-info {
+            padding: 15px;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+            transform: translateY(100%);
+            transition: transform 0.5s;
+        }
+        .flashcard:hover .extra-info {
+            transform: translateY(0);
+        }
+        .content h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .content p {
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+        }
+        .main-content {
+            flex: 1;
+            margin: 20px;
+            text-align: center;
+        }
+        .gallery {
+            width: 150px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .intro img {
+            width: 500px;
+            height: auto;
+        }
+        mark {
+            background-color: #c8e0ff;
+            color:black;
+        }
+
+
+
+:root {
+    --underline-height: 0.5em;
+    --transition-duration: 0.5s;
+    --primary-color: #3498db;
+    --secondary-color: #333;
+    --background-color: whitesmoke;
+    --text-color: black;
+    --footer-bg-color: #333;
+    --footer-text-color: #fff;
+    --footer-hover-color: #ffcc00;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+nav.navbar {
+    position: relative;
+    background: white;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav.navbar a {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+nav.navbar .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: var(--underline-height);
+    width: 100%;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+nav.navbar a:hover .underline {
+    transform: scaleX(1);
+}
+
+
+/* Footer  */
+footer.footer {
+    background: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 2em 1em;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 270px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: var(--footer-hover-color);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5em 0;
+}
+
+.footer-section ul li a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--footer-hover-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1em;
+}
+
+.social-links a {
+    color: var(--footer-text-color);
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--footer-hover-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.8);
+}
+    </style>
+    
+</head>
+
+<body>
+    <!-- Left Gallery -->
+    <div class="gallery">
+        <img src="https://i0.wp.com/akm-img-a-in.tosshub.com/indiatoday/images/photo_gallery/media_bank/202309/world-cup-winners-list-from-1975-to-2023-212858733-3x4.jpg?strip=all"style="width: 150px; height: 200px;" alt="Sport Image 1">
+        <img src="https://images.jdmagicbox.com/v2/comp/delhi/08/011p73608/catalogue/national-rifle-association-of-india-tughlakabad-institutional-area-delhi-association-rifle-2bcuy0v-250.jpg"style="width: 150px; height: 200px;" alt="Sport Image 2">
+        <img src="https://www.worldatlas.com/r/w1200/upload/28/de/c3/shutterstock-1566889075.jpg" style="width: 150px; height: 200px;" alt="Sport Image 3">
+        <img src="https://www.bpmcdn.com/f/files/shared/feeds/gps/2023/10/web1_231012-sul-panesarfieldhockey-main_1.jpg;w=960" style="width: 150px; height: 200px;" alt="Sport Image 4">
+        
+    </div>
+
+    <center>
+        <!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="underline"></div>
+    <a href="index.html" onclick="ul(0)">Home</a>
+    <a href="sportsscheme.html" onclick="ul(1)">Schemes</a>
+    <a href="achievemnts.html" onclick="ul(2)">Achievements</a>
+    <a href="sports.html" onclick="ul(3)">Events</a>
+    <a href="index.html#contact" onclick="ul(4)">Contact</a>
+</nav>
+    <div class="intro">
+        <img src="https://t4.ftcdn.net/jpg/02/86/76/77/360_F_286767786_boXM75PDLYIsYWzabZ3fKcM3esv50TNS.jpg"style="width: 700px; height: 350px;"  alt="Sports Banner">
+        <h1><mark>Global Sports Authority</mark></h1></br>
+        <font size="4">
+        <p style="font-family:'Times New Roman'"> sports have always been an integral part of human civilization, fostering unity, discipline, and a spirit of healthy competition.</br> 
+            Across the globe, organizations have been established to manage and promote various sports, ensuring that they are accessible to all </br>
+            and are conducted in a fair and organized manner. These authorities not only oversee the rules and regulations of their respective sports </br>
+            but also work tirelessly to nurture young talent and uphold the integrity of competitions.</p>
+        <p style="font-family:'Times New Roman'">In India, sports authorities such as the BCCI, Hockey India, and the Indian Olympic Association have played pivotal roles in bringing</br>
+             the country onto the global stage. From cricket, which enjoys unparalleled popularity, to wrestling and shooting, which have earned the </br>
+             nation numerous accolades, these organizations continue to inspire and support athletes in their journey towards excellence. Below, we</br>
+              explore some of these major sports authorities, their roles, and their contributions to the sporting world.</p>
+            <p style="font-family:'Times New Roman'">Sports authorities play a pivotal role in shaping and promoting the spirit of sportsmanship across the globe. </br>
+                The International Olympic Committee (IOC), headquartered in Lausanne, Switzerland, oversees the Olympic Movement, </br>
+                organizes the Summer and Winter Olympic Games, and promotes peace through sports. In football, the Fédération Internationale</br>
+                 de Football Association (FIFA), based in Zürich, Switzerland, manages global football tournaments, including the prestigious </br>
+                 FIFA World Cup, and fosters the sport's growth worldwide. The International Cricket Council (ICC), located in Dubai, governs </br>
+                 cricket internationally, organizing marquee events like the Cricket World Cup and setting gameplay standards. Similarly,</br>
+                  Fédération Internationale de Basketball (FIBA), headquartered in Mies, Switzerland, governs basketball, hosting global events </br>
+                  such as the Basketball World Cup. World Athletics, with its base in Monaco, leads the world in track and field events, organizing</br>
+                   the World Athletics Championships and regulating the sport</p>
+            </fontsize>
+        
+           <font size="5"><p style="font-family:'Times New Roman'"> <a href="https://en.wikipedia.org/wiki/Sport">wikipedia.sports</a> </p></font>
+            </div>
+        </br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Belt_wrestling_pictogram.svg/53px-Belt_wrestling_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ice_hockey_pictogram.svg/53px-Ice_hockey_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Soft_tennis_pictogram.svg/53px-Soft_tennis_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Wrestling_pictogram.svg/53px-Wrestling_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Weightlifting_pictogram.svg/53px-Weightlifting_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shooting_pictogram.svg/53px-Shooting_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Netball_pictogram.svg/53px-Netball_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Cycling_%28track%29_pictogram.svg/53px-Cycling_%28track%29_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cricket_pictogram.svg/53px-Cricket_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Chessboard_%28game%29_pictogram.svg/53px-Chessboard_%28game%29_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Curling_pictogram.svg/53px-Curling_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Boules_sports_pictogram.svg/53px-Boules_sports_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Biathlon_pictogram.svg/53px-Biathlon_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Archery_ski_pictogram.svg/53px-Archery_ski_pictogram.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aikido_pictogram.svg/53px-Aikido_pictogram.svg.png">
+    </br></br></br></br>
+
+    <div class="flashcard-container">
+
+    <!-- Flashcard for BCCI -->
+    <div class="flashcard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Board_of_Control_for_Cricket_in_India_Logo_%282024%29.svg/1200px-Board_of_Control_for_Cricket_in_India_Logo_%282024%29.svg.png"style="width: 100px; height: 80px;" alt="BCCI Logo">
+        <div class="content">
+            <h3>BCCI</h3>
+            <p>The governing body for cricket in India.</p>
+            <a href="https://www.bcci.tv/">www.bcci.tv</a>
+        </div>
+        <div class="extra-info">
+            <p>The Board of Control for Cricket in India organizes international and domestic cricket matches, promotes cricket across India, and represents the nation at ICC events. It is one of the richest cricket boards in the world.</p>
+        </div>
+    </div>
+</br>
+    
+    <!-- Flashcard for NRI -->
+    <div class="flashcard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/National_Rifle_Association_of_India.svg/1024px-National_Rifle_Association_of_India.svg.png" style="width: 100px; height: 80px;" alt="NRI Logo">
+        <div class="content">
+            <h3>NRI</h3>
+            <p>National Rifle Association of India.</p>
+        <a href="https://www.thenrai.in/">thenrai.in</a>
+        </div>
+        <div class="extra-info">
+            <p>The National Rifle Association of India governs shooting sports in India. It organizes national championships, supports emerging athletes, and oversees participation in international competitions like the Olympics.</p>
+        </div>
+    </div>
+</br>
+    <!-- Flashcard for Hockey India -->
+    <div class="flashcard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Hockey_India_Logo.svg/1200px-Hockey_India_Logo.svg.png" style="width: 100px; height: 80px;"alt="Hockey India Logo">
+        <div class="content">
+            <h3>Hockey India</h3>
+            <p>The governing body for field hockey in India.</p>
+            <a href="https://www.hockeyindia.org/">www.hockeyindia.org</a>
+        </div>
+        <div class="extra-info">
+            <p>Hockey India manages the Indian national hockey teams, organizes tournaments like the Hockey India League, and works towards the development and promotion of hockey in the country.</p>
+        </div>
+    </div>
+</br>
+    <!-- Flashcard for Wrestling Federation -->
+    <div class="flashcard">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Wrestling_India.png" style="width: 100px; height: 80px;"alt="Wrestling Logo">
+        <div class="content">
+            <h3>Wrestling Federation of India</h3>
+            <p>the Organization behind wrestling in India.</p>
+            <a href="https://wrestlingfederationofindia.org/">wrestlingfederationofindia.org</a>
+        </div>
+        <div class="extra-info">
+            <p>The Wrestling Federation of India manages wrestling events like the World Championships and Olympics. It nurtures talent through training camps and competitions.</p>
+        </div>
+    </div>
+</br>
+    <!-- Flashcard for IOA -->
+    <div class="flashcard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Indian_Olympic_Association_logo.svg/1024px-Indian_Olympic_Association_logo.svg.png" style="width: 100px; height: 80px;" alt="IOA Logo">
+        <div class="content">
+            <h3>Indian Olympic Association (IOA)</h3>
+            <p>India's apex sports organization.</p>
+            <a href="https://olympic.ind.in/" >olympic.ind.in</a>
+        </div>
+        <div class="extra-info">
+            <p>The IOA is responsible for India's representation at the Olympic Games and other international sports events. It governs and promotes Olympic sports in the country and collaborates with national sports federations.</p>
+        </div>
+    </div>
+</br>
+    <!-- Flashcard for Olympics -->
+    <div class="flashcard">
+        
+        <img src="https://olympic.kz/images/1528962001.png"style="width: 100px; height: px;"alt="Olympics Logo">
+        <div class="content">
+            <h3>International Olympic Committee</h3>
+            <p>The global organizer of the Olympic Games.</p>
+            <a href="https://olympics.com/ioc">olympics.com</a>
+        </div>
+        <div class="extra-info">
+            <p>The IOC fosters international sportsmanship and peace through sports. It organizes the Summer and Winter Olympic Games, bringing together athletes from around the world to compete at the highest level.</p>
+        </div>
+    </div>
+    </div>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Phone: +91 4234567890</li>
+                <li>Email: info@sports.gov</li>
+                <li>Address: 123 Sport Avenue, Pune, India</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="achievemnts.html">Achievements</a></li>
+                <li><a href="index.html#sponser">Sponsors</a></li>
+                <li><a href="sportsscheme.html">Schemes</a></li>
+                <li><a href="sports.html">Events</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/w3layouts">Facebook</a></li>
+                <li><a href="https://twitter.com/w3layouts">Twitter</a></li>
+                <li><a href="https://www.instagram.com/w3layouts_/">Instagram</a></li>
+                <li><a href="https://pinterest.com/w3layouts">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Government Sports. All rights reserved.</p>
+    </div>
+</footer>
+
+    </center>
+
+     <!-- Right Gallery -->
+     <div class="gallery">
+        <img src="https://preview.redd.it/india-are-the-champions-of-t20-world-cup-2024-v0-wnqiu1ftvj9d1.png?auto=webp&s=816ae2c862f2de5f23a3fdccf2a386f6473dedf6"style="width: 150px; height: 200px;" alt="Sport Image 6">
+        <img src="https://c8.alamy.com/comp/2F57T5A/new-delhi-india-24th-mar-2021-new-delhi-india-march-24-indian-shooter-aishwary-pratap-singh-tomar-during-the-50m-air-rifle-mens-final-match-during-the-international-shooting-sports-federation-issf-world-cup-2021-at-dr-karni-singh-shooting-ranges-on-march-24-2021-in-new-delhi-india-photo-by-sanjeev-vermahindustan-timessipa-usa-credit-sipa-usaalamy-live-news-2F57T5A.jpg"style="width: 150px; height: 200px;" alt="Sport Image 7">
+        <img src="https://preview.redd.it/indian-wrestler-vinesh-phogat-makes-history-by-becoming-the-v0-rgl9spl3w2hd1.png?auto=webp&s=88b727aed5f2c70b4c8b23e0b29142b3b0a7cf54"style="width: 150px; height: 200px;"alt="Sport Image 8">
+        <img src="https://thumbs.dreamstime.com/b/paris-hockey-paris-france-july-paris-olympics-argentina-s-national-field-hockey-team-beats-south-africa-advances-to-328415329.jpg"style="width: 150px; height: 200px;" alt="Sport Image 9">
+        
+    </div>
+    
+<!-- Footer Section -->
+<!-- <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>Phone: +91 4234567890</li>
+                <li>Email: info@sports.gov</li>
+                <li>Address: 123 Sport Avenue, Pune, India</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="achievemnts.html">Achievements</a></li>
+                <li><a href="index.html#sponser">Sponsors</a></li>
+                <li><a href="sportsscheme.html">Schemes</a></li>
+                <li><a href="sports.html">Events</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="more.html">More such Committiees</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/w3layouts">Facebook</a></li>
+                <li><a href="https://twitter.com/w3layouts">Twitter</a></li>
+                <li><a href="https://www.instagram.com/w3layouts_/">Instagram</a></li>
+                <li><a href="https://pinterest.com/w3layouts">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Government Sports. All rights reserved.</p>
+    </div>
+</footer>
+</center> -->
+
+     
+    
+</body>
+</html>

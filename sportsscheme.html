@@ -1,0 +1,422 @@
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family:'StrdosStencil';
+                src: url(fonts/StardosStencil-Bold.ttf);
+                font-family:'StrdosStencil2';
+                src: url(fonts/StardosStencil-Regular.ttf) ;
+        
+            }
+            :root {
+    --underline-height: 0.5em;
+    --transition-duration: 0.5s;
+    --primary-color: #3498db;
+    --secondary-color: #333;
+    --background-color: whitesmoke;
+    --text-color: black;
+    --footer-bg-color: #333;
+    --footer-text-color: #fff;
+    --footer-hover-color: #ffcc00;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+nav.navbar {
+    position: relative;
+    background: white;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0;
+}
+
+nav.navbar a {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+nav.navbar .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: var(--underline-height);
+    width: 100%;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+nav.navbar a:hover .underline {
+    transform: scaleX(1);
+}
+
+.announcement {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+            *{
+
+                font-family: 'sans-serrif';
+            }
+            .h1{
+                font-family:'sans-serrif' ;
+                text-align:center;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+                font-size: 50px;
+
+            }
+            .logo{
+                margin-left: 650px;
+                
+               
+            }
+            .firstp{
+                text-align: center;
+                font-weight: bold;
+                margin-left: 250px;
+                margin-right: 250px;
+                border-radius: 10px;
+                font-size:25px;
+
+
+            }
+            .div1{
+                background-image:url(images/sports2.avif);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                
+            }
+            li{
+                display: inline;
+                padding-right: 100px;
+            }
+            .ul1{
+                
+                list-style: none;
+                
+            }
+            li a{
+                text-decoration: none;
+                
+            }
+            .div2{
+                float: left;
+            }
+            .h2{
+                text-align: center;
+                font-size:30px;
+                background-color: aliceblue;
+            }
+            .scheme1{
+                background-color: rgb(255, 255, 255);
+                float: left;
+                border-radius: 10px;
+                padding: 10px;
+                border:double;
+                text-decoration: none;
+                width:600px;
+                height:300px;
+            }
+            .div3{
+                padding-right: 40px;
+
+            }
+            .li1{
+                display: inline-block;
+                padding-right: 50px;
+                margin-left: 20px;
+                margin-right: 20px;
+                text-decoration: none;
+                color: black;
+                list-style: none;
+            }
+            .div4{
+                background: linear-gradient(360deg, rgb(245, 255, 245) 0%, rgb(104, 203, 242) 100%);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+
+            }
+
+            /* Footer  */
+footer.footer {
+    background: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 2em 1em;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: var(--footer-hover-color);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5em 0;
+}
+
+.footer-section ul li a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--footer-hover-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1em;
+}
+
+.social-links a {
+    color: var(--footer-text-color);
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--footer-hover-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.8);
+}
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="underline"></div>
+        <a href="index.html" onclick="ul(0)">Home</a>
+        <a href="sportsscheme.html" onclick="ul(1)">Schemes</a>
+        <a href="achievemnts.html" onclick="ul(2)">Achievements</a>
+        <a href="sports.html" onclick="ul(3)">Events</a>
+        <a href="index.html#contact" onclick="ul(4)">Contact</a>
+        <a href="more.html" onclick="ul(4)">Authorities</a>
+    </nav>
+
+        <h1 class="h1">GOVERNMENT OF INDIA<br/>SCHEMES<br/> FOR SPORTSPERSONS </h1>
+        <img class="logo" src="GOVlogo.png"width="200"><hr/>
+        <div class="div1">
+
+        <article class="firstp">
+            <p>  Welcome to the official platform for India’s transformative sports schemes,<br/>
+                 dedicated to nurturing talent, fostering inclusivity, and building a vibrant<br/>
+                 sports culture across the nation.With initiatives aimed at grassroots <br/>
+                 development, excellence in performance, and accessible infrastructure, we are<br/>
+                 committed to empowering athletes and inspiring a healthier, more active India.,<br/> 
+                 Join us in creating a future where sports unite and uplift communities</p>
+                 <p>Our sports scheme is a visionary initiative designed to identify,<br/> 
+                    nurture, and support talent at every level of athletic development. By providing<br/>
+                    access to world-class training facilities, expert coaching, and financial<br/>
+                    assistance, the scheme aims to empower athletes and promote a thriving sports<br/>
+                    culture across India. Focused on inclusivity and excellence, this initiative <br/>
+                    is paving the way for a brighter future in Indian sports.</p>
+                    <p>Our visonary leaders such a Honurable PM Shree Narendra Modi along with <br/>
+                    Honurable Minister Of Youth Affairs and Sports Dr. Mansukh Mandaviya are committed<br/>
+                    to serve the sportspersons nation wide and help them to tackle the social and financial<br/>
+                    obstacles in their way through the following government schemes.</p>
+                    
+                        <ul class="ul1">
+                            <li><img src="narendra modi.jpeg"width="200px"height="250px"></li>
+                            <li><img src="Dr. Mansukh Mandaviya.jpeg"width="200px"height="250px"></li>
+
+                        </ul>
+                        
+                    </div><hr/></article>
+
+
+
+                    <div class="div4">
+                        
+                        <h2 class="h2">SCHEMES</h2>
+                        <ul>
+                            <li class="li1">
+                        <a href="https://kheloindia.gov.in/">
+                        <article class="scheme1">
+                            <h3>Khelo India Programme</h3>
+                            <p>National Programme for Development of Sports, branded as Khelo India,<br/>
+                            aims at improving India's sports culture at the grass-root level through<br/> 
+                            organized talent identification, structured sporting competitions and<br/> 
+                            infrastructure development.It is a Government of India programme launched in<br/>
+                            2017-18 under the tenure Prime Minister Narendra Modi and Sports Ministers Vijay<br/> 
+                            Goel and Rajyavardhan Singh Rathore.There has also been an emphasis on including<br/> 
+                            traditional Indian games in Khelo India events in order to revive their popularity.</p></article></a></li>
+
+                           <li class="li1"> <a href="https://sportsauthorityofindia.nic.in/sai/target-olympic-podium">
+                                <article class="scheme1">
+                                    <h3>Target Olympic Podium Scheme (TOPS)</h3>
+                                    <p>Target Olympic Podium Scheme (TOPS) is a scheme created by Government<br/>
+                                    of India to promote sports in India.In September 2014, the Ministry of <br/>
+                                    Youth Affairs and Sports, Government of India started a scheme to train and promote<br/>
+                                    high-performance athletes with a target of getting medals at the 2016 Rio and 2020<br/>
+                                    Tokyo Olympic Games. It constituted a committee called as TOPS Elite Athletes<br/>
+                                    Identification Committee to identify the elite athletes who can be supported in their<br/>
+                                    training to get the Olympic medals.TOPS was expanded to include junior athletes in 2020</p></article></a></li>
+        
+        
+
+
+                                </ul>
+                            <ul>
+                                <li class="li1">
+                                    <a href="https://yas.nic.in/sports/national-sports-development-fund-0">
+                                    <article class="scheme1">
+                                        <h3>National Sports Development Fund (NSDF)</h3>
+                                        <p>National Sports Development Fund (NSDF) was established in 1998 under the Charitable Endowments Act 1890;
+                                            It was notified by Government of India in November, 1998;
+                                            Purpose of creation is to impart momentum and flexibility to assisting the cause of sports;
+                                            The Fund helps sportspersons excel by providing them opportunities to train under coaches of international repute with technical, scientific and psychological support and giving them exposure to international competitions;
+                                            The Fund also provides financial assistance for development of infrastructure and other activities for promotion of sports;
+                                            Role of the Fund is supplementary to the overall policy and activities of the Department of Sports in achieving excellence in sports.</p></article></a></li>
+                                           <li class="li1">
+                                            <a href="https://yas.nic.in/sites/default/files/NWFS_Scheme%2022092017.pdf">
+                                            <article class="scheme1">
+                                                <h3>Pandit Deendayal Upadhyaya National Welfare Fund for Sportspersons</h3>
+                                            <p> Pandit Deendayal Upadhyay National Welfare Fund For Sportspersons (PDUNWFS) was
+                                                 set up in March, 1982 with a view to assisting outstanding Sportspersons of 
+                                                 yesteryear, living in indigent circumstances who had brought glory to the 
+                                                 Country in sports. The scheme as revised in May, 2016 to provide for lump
+                                                  sum ex-gratia assistance to outstanding Sportspersons of yesteryears.
+                                                   Provision of pension has been done away with as there is already a Scheme of
+                                                    Pension for Meritorious Sportspersons.
+
+
+
+                                            </p></article></a></li>
+            
+                            </ul>
+                        <UL>
+                            <li class="li1">
+                                <a href="https://sports.odisha.gov.in/sites/default/files/2022-01/Documents-135.pdf">
+                                <article class="scheme1">
+                                    <h3>Rajiv Gandhi Khel Abhiyan (RGKA)</h3>
+                                <p> Rajiv Gandhi Khel Abhiyan (RGKA) The Rajiv Gandhi Khel Abhiyan (RGKA) scheme has been rechristened
+                                     as Khelo India Programme by the Union Government for development of sports. Beside this, two other
+                                      sport projects launched under the Congress-led UPA government namely Urban Sports Infrastructure 
+                                      Scheme (USIS) and National Sports Talent Search Scheme (NSTSS) have been merged under Khelo India. 
+                                      The Khelo India scheme is based on Gujarat’s model of Khel Mahakumbh under which the schools and 
+                                      colleges from different parts of the country participate in about 27 disiplines.
+
+                                </p></article></a></li>
+                                <li class="li1">
+                                    <a href="https://nationalsportstalenthunt.com/iFileSAI/adminIndexPage">
+                                    <article class="scheme1">
+                                        <h3>Sports Talent Search Portal</h3>
+                                    <p> The Sports Talent Search Portal is an online platform launched by the Government
+                                         of India in 2020 to identify and nurture potential sports talent across the
+                                          country. The initiative aims to discover young athletes, especially in rural
+                                           and remote areas, who have the ability to excel in sports and provide them
+                                            with the necessary training and support.The portal allows young athletes to 
+                                            register and be evaluated based on their physical attributes and performance 
+                                            in various sports. It aims to uncover hidden talent in regions that may not
+                                             have access to formal scouting systems.
+
+                                    </p></article></a></li>
+                        </UL>
+                    <ul>
+                        <li class="li1">
+                            <a href="https://nationalsports.co.in/">
+                            <article class="scheme1">
+                                <h3>National Sports Scholarships Scheme</h3>
+                            <p>The National Sports Development Scholarships are open to eligible sports talents 
+                                between the ages of 8 and 27. The scheme is available to individuals or teams 
+                                who participate in or achieve in any government-recognized and approved rural
+                                 or urban sports.The portal allows young athletes to register and be evaluated
+                                  based on their physical attributes and performance in various sports. It aims
+                                   to uncover hidden talent in regions that may not have access to formal scouting
+                                    systems. Even physically disabled athletes, such as the deaf, blind,
+                                  and Paralympians, are eligible to apply. 
+
+                            </p></article></a></li>
+                            <li class="li1">
+                                <a href="https://missionolympic.com">
+                                <article class="scheme1">
+                                    <h3>Mission Olympics</h3>
+                                <p>Mission Olympics is an initiative launched by the Government of India to improve the
+                                  performance of Indian athletes at the Olympic Games and other international sports competitions.
+                                   The mission focuses on long-term strategies for preparing athletes, enhancing training programs,
+                                    and providing the necessary resources and support to help India win more medals at the Olympics.
+                                    Mission Olympics focuses on identifying promising athletes from a young age and nurturing them
+                                     through systematic training programs. These programs help develop athletes' skills to compete 
+                                     at the highest levels of international sports
+
+                                </p></article></a></li>
+                    </ul></div>
+
+                    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Phone: +91 4234567890</li>
+                    <li>Email: info@sports.gov</li>
+                    <li>Address: 123 Sport Avenue, Pune, India</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="achievemnts.html">Achievements</a></li>
+                    <li><a href="index.html#sponser">Sponsors</a></li>
+                    <li><a href="sportsscheme.html">Schemes</a></li>
+                    <li><a href="sports.html">Events</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="more.html">More such Committies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Government Sports. All rights reserved.</p>
+        </div>
+    </footer>
+    </body>
+</html>
